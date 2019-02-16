@@ -1,0 +1,36 @@
+baseURL = "https://jkluk.github.io/"
+# include content marked as draft
+buildDrafts = false
+# include content with publishdate in the future
+buildFuture = false
+# include content already expired
+buildExpired = false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs = true
+disableRSS = true
+enableRobotsTXT = true
+editor = "nano"
+languageCode = "en"
+language = "en"
+theme = "vncnt-hugo"
+title = "Joe Luk · Landing Page"
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
+[permalinks]
+  fixed = ":title/"
+  posts = "posts/:slug/"
+
+[params]
+  author = "Joe Luk"
+  description = "Landing Page"
+  bio = "Director of Systems \nUCLA Social Sciences Computing"
+  avatar = "jkluk.jpg"
+  favicon = "img/favicon.ico"
+
+  [params.contact]
+    email = "jkluk@ucla.edu"
+    instagram = "luksmash"
+    twitter = "jkluk"
+    github = "jkluk"
